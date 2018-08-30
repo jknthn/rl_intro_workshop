@@ -1,10 +1,15 @@
+footer: Tooploox
+slidenumbers: true
+autoscale: true
+
 # [fit] Reinforcement 
 # [fit] Learning
-## [fit] **wprowadzenie**
-## by **Tooploox AI**
+## [fit] **Wprowadzenie**
 Jeremi Kaczmarczyk
 Rafał  Nowak
 Piotr  Semberecki
+## by **Tooploox AI**
+
 
 ^ Presenter notes
 
@@ -13,13 +18,14 @@ Piotr  Semberecki
 # Reinforcement Learning
 
 > Reinforcement Learning - jest to uczenie co zrobić - jak dopasować sytuacje do akcji aby zmaksymalizować numeryczny sygnał nagrody
-- Reinforcement Learning: An Introduction 2nd ed
+
+- Reinforcement Learning: An Introduction 2nd ed.
 
 ^ Presenter notes
 
 ---
 
-# State - **stan**
+# State - **Stan**
 
 # [fit] $$\large{s}, \large{s^{\prime}}, \large{s_{t}}$$
 
@@ -29,7 +35,7 @@ Stan określamy symbolem $$\large{s}$$ i jest to obecna sytuacja w jakiej znajdu
 
 ---
 
-## Action - **akcja**
+## Action - **Akcja**
 
 # [fit] $$\large{a}, \large{a_{t}}$$
 
@@ -39,7 +45,7 @@ Znajdując się w stanie $$\large{s}$$ możemy wykonać akcję $$\large{a}$$. Ak
 
 ---
 
-## Reward - **nagroda**
+## Reward - **Nagroda**
 
 # [fit] $$\large{r}, \large{r_{t}}$$
 
@@ -51,7 +57,7 @@ Po wykonaniu akcji otrzymujemy nagrodę $$\large{r}$$ od środowiska. Nagrodę o
 
 ---
 
-# Policy - **polityka**
+# Policy - **Polityka**
 
 # [fit] $$\large{\pi}, \large{\pi(s)}, \large{\pi(a|s)}$$
 
@@ -62,7 +68,7 @@ Polityka definiuje zachowanie w danym momencie. Jest to funkcja parametryzowana 
 
 --- 
 
-## Value - **wartość**
+## Value - **Wartość**
 
 # [fit] $$\large{v_{\pi}(s)}, \large{q_{\pi}(s, a)}$$
 
@@ -72,7 +78,7 @@ Wartość określana jest w stosunku do danej polityki $$\large{\pi}$$. Określa
 
 ---
 
-# Agent - środowisko
+# Agent - Środowisko
 
 ![inline](figtmp7.png)
 
@@ -96,3 +102,41 @@ Wartość określana jest w stosunku do danej polityki $$\large{\pi}$$. Określa
 
 # Markov Decision Process - MDP
 
+
+---
+
+# OpenAI Gym
+
+> Gym is a toolkit for developing and comparing reinforcement learning algorithms. It supports teaching agents everything from walking to playing games like Pong or Pinball.
+
+- Gym website [https://gym.openai.com](https://gym.openai.com)
+
+
+## Installing
+`pip install gym`
+
+---
+### First Visit Monte Carlo Predicion
+
+![inline](fvmcp.png)
+
+---
+### First Visit Monte Carlo Control
+
+![inline](fvmcc.png)
+
+---
+
+### [fit] Exploration vs Exploitation
+
+--- 
+
+### TD-Learning (SARSA)
+
+![inline](sarsa.png)
+
+--- 
+
+### TD-Learning (Q-Learning)
+
+![inline](q.png)
