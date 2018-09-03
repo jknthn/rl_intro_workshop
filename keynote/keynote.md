@@ -15,15 +15,35 @@ Piotr  Semberecki
 
 ---
 
+# Agenda:
+
+1. Program / Agenda
+2. Wprowadzenie do OpenAI
+3. Gra ?????
+4. Metody Monte Carlo
+5. Temporal Difference Learning
+
+---
+
+## Cele tego szkolenia
+- Zapoznanie z tematem Reinforcement Learningu
+- Zapozananie z technikami 
+- Stworzyć okazje do zaprogramowania podstawowych algorytmów/technik RL
+
+### Zasady:
+- Prezentacja (hangout - view) + ludzie zdalni będą zmutowani podczas rozwiązywania zadań a w przerwach pomiędzy zadaniami mamy czas na dyskusję i wtedy będziemy ich odblokowywali
+- Colab - jupyter Google:
+- Slack kanał #rl-workshop
+
+---
+
 # Reinforcement Learning
 
 > Reinforcement Learning - jest to uczenie co zrobić - jak dopasować sytuacje do akcji aby zmaksymalizować numeryczny sygnał nagrody
 
 - Reinforcement Learning: An Introduction 2nd ed.
 
-^ Presenter notes
-
----
+--- 
 
 # State - **Stan**
 
@@ -108,6 +128,13 @@ Wartość określana jest w stosunku do danej polityki $$\large{\pi}$$. Określa
 
 ---
 
+# Markov Decision Process - MDP
+
+![inline](mark1.png)
+![inline 90%](mark2.png)![inline 70%](mark3.png)
+
+---
+
 # OpenAI Gym
 
 > Gym is a toolkit for developing and comparing reinforcement learning algorithms. It supports teaching agents everything from walking to playing games like Pong or Pinball.
@@ -118,6 +145,28 @@ Wartość określana jest w stosunku do danej polityki $$\large{\pi}$$. Określa
 ## Installing
 `pip install gym`
 
+---
+
+# OpenAI Gym
+
+```python
+done = False
+while not done:
+    env.render()
+    time.sleep(.5)
+    clear_output(True)
+    observation, reward, done, info = env.step(env.action_space.sample())
+```
+```
++---------+
+|R: | : :G|
+| : : : : |
+| : : : : |
+| | : | : |
+|Y| : |B: |
++---------+
+  (South)
+```
 ---
 ### First Visit Monte Carlo Predicion
 
