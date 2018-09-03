@@ -102,6 +102,9 @@ Wartość określana jest w stosunku do danej polityki $$\large{\pi}$$. Określa
 
 # Markov Decision Process - MDP
 
+![inline 50%](mark1.png)
+![inline 70%](mark2.png)
+![inline 50%](mark3.png)
 
 ---
 
